@@ -1,0 +1,9 @@
+  // 【구조】 전역 스타일 초기화/커스텀
+  // Vuetify는 기본적으로 자체 스타일을 불러오므로 여기엔 공통 유틸 위주 권장
+  :root {
+    --app-max-width: 1280px;
+  }
+
+  html, body, #app {
+    height: 100%;
+  }

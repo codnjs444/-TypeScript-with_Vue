@@ -1,7 +1,22 @@
-{
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
-}
+  {
+    "//": "【구조】 TypeScript 컴파일러 설정 (vite/client 타입 적용, 경로 별칭 @/*)",
+    "compilerOptions": {
+      "target": "ES2022",
+      "useDefineForClassFields": true,
+      "module": "ESNext",
+      "lib": ["ES2022", "DOM", "DOM.Iterable"],
+      "skipLibCheck": true,
+      "moduleResolution": "bundler",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "strict": true,
+      "verbatimModuleSyntax": true,
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      },
+      "types": ["vite/client"]
+    },
+    "include": ["src"]
+  }
